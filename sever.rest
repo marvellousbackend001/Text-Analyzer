@@ -1,0 +1,42 @@
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+"username":"kennedy001", 
+"email":"kennedymarvellous001@gmail.com", 
+"password":"123456"
+}
+
+###
+GET http://localhost:8080/login
+Content-Type: application/json
+
+{
+"email":"kennedymarvellous001@gmail.com", 
+"password":"123456"
+}
+
+###
+POST http://localhost:8080/create_texts
+Content-Type: application/json
+
+{
+    "user_id": 1, 
+    "content": "this is my content"
+}
+
+###
+GET http://localhost:8080/texts/1
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/update_text/1
+Content-Type: application/json
+
+{
+    "content": "Updated text content"
+}
+
+###
+DELETE http://localhost:8080/delete_text/1
+Content-Type: application/json
